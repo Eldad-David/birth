@@ -1,0 +1,6 @@
+body {
+    background-image: url(/images/web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+}
