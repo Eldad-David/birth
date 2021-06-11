@@ -4,7 +4,7 @@ body {
     color: red;
 }
 .container {
-    background-color: rgb(24, 23, 18);
+    background-color: transparent;
 }
 th, td {
     border: 1px solid white;
