@@ -19,5 +19,6 @@ Technologies used are:
 ## Support and contact details
 Get to contact me on: davengash100@gmail.com
 ### License
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*MIT License*
+ Visit LICENSE.txt to view the license.
 Copyright (c) 2021 **Eldad David**
