@@ -25,3 +25,6 @@ form {
     width: 500px;
     margin: auto;
 }
+.form-check {
+    margin-bottom: 10px;
+}
