@@ -21,3 +21,7 @@ table {
     margin: 20px;
     padding: 10px;
 }
+form {
+    width: 500px;
+    margin: auto;
+}
