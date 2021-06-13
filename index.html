@@ -17,11 +17,19 @@
                 With only this simple steps get to know the day of the week that
                 you were born in. Fill in everything in this form and click submit so
                 as to know the day you were born.
-            </div><br><br>
+            </div>
             <p>
                 The day shall be given in form of an Akan name as it is according to the Ghanian culture.
                 Here you have a preview of the names they give to there children based on the day they
-                were born.
+                were born. Kindly read through this instructions <strong>CAREFULLY</strong> so as to be 
+                able to get the correct date:
+                <ul>
+                    <li><em>The Century Input.</em>
+                    Here you should fill in the first two digits of your year of birth.
+                    If it's '2000' fill in '20'. If its '1995' fill in '19'. 
+                    Otherwise the wrong information shall be given.
+                    </li>
+                </ul>
             </p>
             <div class="col-md-6">
                 
@@ -106,14 +114,19 @@
         <form action="">
             <div class="mb-3">
                 <label for="username">Your name:</label>
-                <input type="text" name="username" id="username" class="form-control">
+                <input type="text" name="username" id="username" placeholder="Your Full Name" class="form-control">
+            </div>
+            
+            <div class="mb-3">
+                <label for="birthyear">Century of birth:</label>
+                <input type="number" name="birthyear" id="birthyear" class="form-control">   
             </div>
 
             <div class="mb-3">
                 <label for="birthyear">Year of birth:</label>
                 <input type="number" name="birthyear" id="birthyear" class="form-control">   
             </div>
-           
+
             <div class="mb-3">
                 <label for="birthmonth">Month of birth:</label>
                 <input type="number" name="birthmonth" id="birthmonth" class="form-control">
@@ -135,7 +148,7 @@
                 <input type="checkbox" class="form-check-input">
                 <label for="accept-terms" class="form-check-label">Accept the terms & conditions at the top of the page.</label>
             </div>
-            
+
             <div class="mb-3">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
