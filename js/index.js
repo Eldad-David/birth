@@ -28,7 +28,7 @@ function calculatingAkanname () {
     
     if (gender === 'male') {
         if (dayoftheweek ===0) {
-            alert(name + ' you were born in ' + days[0]);
+            alert(name + ' you were born on a ' + days[0]);
             alert ('Your Akan name is ' + maleName[0]);
         }
         else if (dayoftheweek ===1) {
@@ -76,7 +76,7 @@ function calculatingAkanname () {
             alert ('Your Akan name is ' + femaleName[2]);
         }
         else if (dayoftheweek ===3) {
-            alert(name + ' you were born ion a '+ days[3]);
+            alert(name + ' you were born on a '+ days[3]);
             alert ('Your Akan name is ' + femaleName[3]);
         }
         else if (dayoftheweek ===4) {
