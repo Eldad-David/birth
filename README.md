@@ -1,4 +1,4 @@
-# When were you born.
+# Akan Names.
 #### Know the day of the week that you were born in. 
 ## By **Eldad David**
 ## Description
