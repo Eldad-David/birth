@@ -86,5 +86,5 @@ function calculatingAkanname () {
     }
     
 }
-calculatingAkanname();
+return calculatingAkanname();
 

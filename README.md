@@ -9,6 +9,10 @@ It contains web pages that calculate the day of the week that someone was born i
 * Fill in the form correctly and truthfully.
 * Click submit 
 * Then know the day of the week that you were born in.
+## BDD
+The program takes the users date of birth, name and gender.
+It then returns the users day of the week in which they were born in 
+as well as the Akan name that suits them.
 ## Known Bugs
 Can be messy as it is my first time using Javascript.
 ## Technologies Used
