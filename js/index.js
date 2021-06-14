@@ -23,7 +23,7 @@ function calculatingAkanname () {
             alert ('Your Akan name is; ' + maleName[0]);
         }
         else if (dayoftheweek ===1) {
-         alert('Heey you were born; '+ days[1]);
+            alert('Heey you were born; '+ days[1]);
             alert ('Your Akan name is; ' + maleName[1]);
         }
         else if (dayoftheweek ===2) {
