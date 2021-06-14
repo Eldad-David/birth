@@ -4,29 +4,35 @@ function calculatingAkanname () {
     let mm = parseInt(document.getElementById('birthmonth').value);
     let yy = parseInt(document.getElementById('birthyear').value);
     let cc = parseInt(document.getElementById('birthcentury').value);
-    let gender = document.getElementById('gender').value;
-
-    let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    let maleName = ['Kwasi''Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
-    let femaleName = ['Akosua''Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+    let days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+    let maleName = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+    let femaleName = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
     let dayoftheweek = parseInt( ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7);
 
 
     if (dd <=0 || dd > 31) {
         alert('Invalid Entry!!');
+        return false;
     }
     if (mm <= 0 || mm > 12) {
         alert('Invalid Entry!!');
+        return false;
+    }
+    
+    if (document.getElementById('gender').checked) {
+        var gender = 'male';
+    }
+    else {
+        var gender = 'female';
     }
     
     if (gender = 'male') {
-
         if (dayoftheweek ===0) {
-            alert('Heey you were born; ' + days[0]);
+            alert('Heey you were born in ' + days[0]);
             alert ('Your Akan name is; ' + maleName[0]);
         }
         else if (dayoftheweek ===1) {
-            alert('Heey you were born; '+ days[1]);
+            alert('Heey you were born in '+ days[1]);
             alert ('Your Akan name is; ' + maleName[1]);
         }
         else if (dayoftheweek ===2) {
@@ -88,5 +94,4 @@ function calculatingAkanname () {
             alert ('Your Akan name is ' + femaleName[7]);
         } 
     }
-} 
-alert (calculatingAkanname());
+}
