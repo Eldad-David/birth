@@ -13,7 +13,7 @@ function calculatingAkanname () {
         alert ('No blank values allowed.');
     }
 
-    let gender = document.querySelector('select[name="gender"]:checked').value;
+    let gender = document.querySelector('input[name="gender"]:checked').value;
     let dayoftheweek = parseInt( ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7);
 
     if (gender = 'Male') {
