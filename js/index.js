@@ -5,7 +5,7 @@ function calculatingAkanname () {
     let mm = parseInt(document.getElementById('birthmonth').value);
     let yy = parseInt(document.getElementById('birthyear').value);
     let cc = parseInt(document.getElementById('birthcentury').value);
-    var gender = document.querySelector('input[name="gender"]:checked').value;
+    let gender = document.querySelector('input[name="gender"]:checked').value;
     let days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
     let maleName = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
     let femaleName = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
@@ -17,11 +17,11 @@ function calculatingAkanname () {
         return false;
     }
     if (mm <= 0 || mm > 12) {
-        alert('Invalid Entry!!  Check the month value.');
+        alert('Invalid Entry!!  Check the birth month value.');
         return false;
     }
     if (mm === 2 && dd > 28) {
-        alert('Invalid Entry!!  Check the date value.');
+        alert('Invalid Entry!!  Check the day of the month value.');
         return false;
     }
     
