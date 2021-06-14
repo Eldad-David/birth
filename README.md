@@ -16,6 +16,7 @@ Technologies used are:
    HTML
    CSS
    Javascript (First time using javascript in a webpage.)
+   Bootstrap
 ## Support and contact details
 Get to contact me on: davengash100@gmail.com
 ### License
