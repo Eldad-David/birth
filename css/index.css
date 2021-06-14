@@ -5,17 +5,19 @@ body {
     font-size: 25px;
 }
 .container {
-    background-color: transparent;
+    background-color: rgb(88, 51, 6);
     text-align: center;
+    padding-bottom: 20px;
 }
 h1 {
     text-align: center;
-    font-size: 40px;
-    color: rgb(182, 45, 45);
+    font-size: 45px;
+    color: rgb(0, 0, 0);
 }
 h2 {
     text-align: center;
-    color: darkred;
+    color: rgb(255, 79, 79);
+    font-size: 30px;
 }
 th, td {
     border: 1px solid white;
@@ -27,6 +29,10 @@ th, td {
     padding-right: 20px;
     text-align: center;
     border: 3px solid white;
+}
+hr {
+    color: black;
+    border: 1px solid black;
 }
 table {
     margin: 20px;
@@ -40,8 +46,8 @@ form {
     margin-bottom: 10px;
 }
 ul {
-    text-align: left;
-    font-size: 20px;
+    text-align: justify;
+    font-size: 16px;
     color: white;
 }
 .btn.btn-primary {

@@ -8,17 +8,19 @@ function calculatingAkanname () {
     let maleName = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
     let femaleName = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 
+    
+
     if (dd.value == '' || mm.value == ''|| yy.value == ''|| cc.value == '') {
         alert ('No blank values allowed.');
     }
 
-    let gender = document.querySelector('input[name="gender"]:checked').value;
+    let gender = document.getElementById()
     let dayoftheweek = parseInt( ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7);
 
     if (gender = 'Male') {
 
         if (dayoftheweek ===0) {
-            alert('Heey you were born; '+ days[0]);
+            alert('Heey you were born; ' + days[0]);
             alert ('Your Akan name is; ' + maleName[0]);
         }
         else if (dayoftheweek ===1) {
@@ -86,5 +88,15 @@ function calculatingAkanname () {
     }
     
 }
-return calculatingAkanname();
 
+function validateForm() {
+
+    if (dd.value < 0 && dd.value > 31) {
+        alert ('Invalid Entry!!');
+        return false;
+    }
+    if (mm.value <0 && mm.value > 12) {
+        alert ('Invalid Entry!!');
+        return false;
+    }
+}

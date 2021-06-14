@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>WELCOME!</h1>
+        <h1>AKAN NAME GENERATOR!</h1>
         <h2>Get to know the day you were born!</h2>
         <h2>Also get to know your Akan name.</h2>
         <div class="row">
@@ -23,20 +23,23 @@
                 The day of the week in which you were born in shall be given in form of an Akan name 
                 as it is according to the Ghanian culture.
                 Here you have a preview of the names they give to there children based on the day they
-                were born. Kindly read through this instructions <strong>CAREFULLY</strong> so as to be 
-                able to get the correct date:
-                <ul>
-                    <li><em>The Century Input.</em>
-                    Here you should fill in the first two digits of your year of birth.
-                    If it's '2000' fill in '20'. If its '1995' fill in '19'. 
-                    Otherwise the wrong information shall be given.
-                    </li>
-                    <li><em>The year Input.</em>
-                        Kindly fill in the last two digits of your year of birth.
-                        If it's '2000' fill in '100'. If it's '1995' fill in '95'. 
-                        Otherwise wrong information shall be given.
-                    </li>
-                </ul>
+                were born. <hr>
+                <div>
+                   Kindly read through this instructions <strong>CAREFULLY</strong> so as to be 
+                   able to get the correct date:
+                    <ul>
+                        <li><em>The Century Input.</em>
+                            Here you should fill in the first two digits of your year of birth.
+                            If it's '2000' fill in '20'. If its '1995' fill in '19'. 
+                            Otherwise the wrong information shall be given.
+                        </li>
+                        <li><em>The year Input.</em>
+                            Kindly fill in the last two digits of your year of birth.
+                            If it's '2000' fill in '100'. If it's '1995' fill in '95'. 
+                            Otherwise wrong information shall be given.
+                        </li>
+                    </ul>
+                </div> 
             </p>
             <div class="col-md-6">
                 
@@ -136,7 +139,7 @@
 
             <div class="mb-3">
                 <label for="birthmonth">Month of birth:</label>
-                <input type="number" name="birthmonth" id="birthmonth" placeholder="04" class="form-control" required>
+                <input type="number" name="birthmonth" id="birthmonth" onsubmit="return validateForm()" placeholder="04" class="form-control" required>
             </div>
 
             <div class="mb-3">
@@ -159,6 +162,6 @@
             </div>
         </form>
     </div>
-    <script src="/js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
