@@ -20,14 +20,9 @@ function calculatingAkanname () {
         return false;
     }
     
-    if (document.getElementById('gender').checked) {
-        var gender = 'male';
-    }
-    else {
-        var gender = 'female';
-    }
+    var gendermale = document.getElementById('male').value;
     
-    if (gender = 'male') {
+    if (gendermale = 'male') {
         if (dayoftheweek ===0) {
             alert(name + ' you were born in ' + days[0]);
             alert ('Your Akan name is ' + maleName[0]);
@@ -61,7 +56,8 @@ function calculatingAkanname () {
             alert ('Your Akan name is ' + maleName[7]);
         } 
     }
-    else {
+    if (gendermale != 'male') {
+
         if (dayoftheweek ===0) {
             alert(name + ' you were born on a '+ days[0]);
             alert ('Your Akan name is ' + femaleName[0]);
