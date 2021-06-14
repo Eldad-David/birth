@@ -5,11 +5,12 @@ function calculatingAkanname () {
     let mm = parseInt(document.getElementById('birthmonth').value);
     let yy = parseInt(document.getElementById('birthyear').value);
     let cc = parseInt(document.getElementById('birthcentury').value);
+    var gender = document.querySelector('input[name="gender"]:checked').value;
     let days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
     let maleName = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
     let femaleName = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
     let dayoftheweek = parseInt( ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7);
-
+    
 
     if (dd <=0 || dd > 31) {
         alert('Invalid Entry!! Check the birth day value');
@@ -24,7 +25,6 @@ function calculatingAkanname () {
         return false;
     }
     
-    var gender = document.querySelector('input[name="gender"]:checked').value;
     
     if (gender === 'male') {
         if (dayoftheweek ===0) {
