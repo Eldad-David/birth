@@ -4,7 +4,6 @@ function calculatingAkanname () {
     let mm = parseInt(document.getElementById('birthmonth').value);
     let yy = parseInt(document.getElementById('birthyear').value);
     let cc = parseInt(document.getElementById('birthcentury').value);
-
     let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let maleName = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
     let femaleName = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
@@ -87,3 +86,5 @@ function calculatingAkanname () {
     }
     
 }
+calculatingAkanname();
+
