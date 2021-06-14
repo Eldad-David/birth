@@ -1,5 +1,6 @@
 function calculatingAkanname () {
 
+    let name = document.getElementById('username').value;
     let dd = parseInt(document.getElementById('birthday').value);
     let mm = parseInt(document.getElementById('birthmonth').value);
     let yy = parseInt(document.getElementById('birthyear').value);
@@ -11,11 +12,11 @@ function calculatingAkanname () {
 
 
     if (dd <=0 || dd > 31) {
-        alert('Invalid Entry!!');
+        alert('Invalid Entry!! Check the birth day value');
         return false;
     }
     if (mm <= 0 || mm > 12) {
-        alert('Invalid Entry!!');
+        alert('Invalid Entry!!  Check the month value.');
         return false;
     }
     
@@ -28,69 +29,69 @@ function calculatingAkanname () {
     
     if (gender = 'male') {
         if (dayoftheweek ===0) {
-            alert('Heey you were born in ' + days[0]);
-            alert ('Your Akan name is; ' + maleName[0]);
+            alert(name + ' you were born in ' + days[0]);
+            alert ('Your Akan name is ' + maleName[0]);
         }
         else if (dayoftheweek ===1) {
-            alert('Heey you were born in '+ days[1]);
-            alert ('Your Akan name is; ' + maleName[1]);
+            alert(name + ' you were born on a '+ days[1]);
+            alert ('Your Akan name is ' + maleName[1]);
         }
         else if (dayoftheweek ===2) {
-            alert('Heey you were born in '+ days[2]);
+            alert(name + ' you were born on a '+ days[2]);
             alert ('Your Akan name is ' + maleName[2]);
         }
         else if (dayoftheweek ===3) {
-            alert('Heey you were born in '+ days[3]);
+            alert(name + ' you were born on a '+ days[3]);
             alert ('Your Akan name is ' + maleName[3]);
         }
         else if (dayoftheweek ===4) {
-            alert('Heey you were born in '+ days[4]);
+            alert( name + ' you were born on a '+ days[4]);
             alert ('Your Akan name is ' + maleName[4]);
         }
         else if (dayoftheweek ===5) {
-            alert('Heey you were born in '+ days[5]);
-            alert ('Your Akan name is; ' + maleName[5]);
+            alert(name + ' you were born on a '+ days[5]);
+            alert ('Your Akan name is ' + maleName[5]);
         }
         else if (dayoftheweek ===6) {
-            alert('Heey you were born in '+ days[6]);
+            alert(name + ' you were born on a '+ days[6]);
             alert ('Your Akan name is ' + maleName[6]);
         }
         else if (dayoftheweek ===7) {
-            alert('Heey you were born in '+ days[7]);
-            alert ('Your Akan name is; ' + maleName[7]);
+            alert(name + ' you were born on a '+ days[7]);
+            alert ('Your Akan name is ' + maleName[7]);
         } 
     }
     else {
         if (dayoftheweek ===0) {
-            alert('Heey you were born in '+ days[0]);
+            alert(name + ' you were born on a '+ days[0]);
             alert ('Your Akan name is ' + femaleName[0]);
         }
         else if (dayoftheweek ===1) {
-         alert('Heey you were born in '+ days[1]);
+         alert(name + ' you were born on a '+ days[1]);
             alert ('Your Akan name is ' + femaleName[1]);
         }
         else if (dayoftheweek ===2) {
-            alert('Heey you were born in '+ days[2]);
+            alert(name + ' you were born on a '+ days[2]);
             alert ('Your Akan name is ' + femaleName[2]);
         }
         else if (dayoftheweek ===3) {
-            alert('Heey you were born in '+ days[3]);
+            alert(name + ' you were born ion a '+ days[3]);
             alert ('Your Akan name is ' + femaleName[3]);
         }
         else if (dayoftheweek ===4) {
-            alert('Heey you were born in '+ days[4]);
+            alert(name + ' you were born on a  '+ days[4]);
             alert ('Your Akan name is ' + femaleName[4]);
         }
         else if (dayoftheweek ===5) {
-            alert('Heey you were born in '+ days[5]);
+            alert(name + ' you were born on a '+ days[5]);
             alert ('Your Akan name is ' + femaleName[5]);
         }
         else if (dayoftheweek ===6) {
-            alert('Heey you were born in '+ days[6]);
+            alert(name + ' you were born on a '+ days[6]);
             alert ('Your Akan name is ' + femaleName[6]);
         }
         else if (dayoftheweek ===7) {
-            alert('Heey you were born in '+ days[7]);
+            alert(name + ' you were born on a '+ days[7]);
             alert ('Your Akan name is ' + femaleName[7]);
         } 
     }
