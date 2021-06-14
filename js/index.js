@@ -19,6 +19,10 @@ function calculatingAkanname () {
         alert('Invalid Entry!!  Check the month value.');
         return false;
     }
+    if (mm === 2 && dd > 28) {
+        alert('Invalid Entry!!  Check the date value.');
+        return false;
+    }
     
     var gendermale = document.getElementById('male').value;
     
