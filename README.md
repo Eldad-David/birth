@@ -1,6 +1,5 @@
 # Akan Names.
-#### This is my second working website with help from Moringa School. 
-## By **Eldad David**
+#### This is my second working website with help from Moringa School. By **Eldad David**
 ## Description
 It contains web pages that calculate the day of the week that someone was born in. It also gives people the Akan name they would be given based on gender and the day of the week they were born in.
 ## Setup/Installation Requirements
