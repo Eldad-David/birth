@@ -24,6 +24,10 @@ function calculatingAkanname () {
         alert('Invalid Entry!!  Check the day of the month value.');
         return false;
     }
+    if (mm === 4 || mm === 6 || mm ===9 || mm === 11 && dd >30) {
+        alert('Invalid Entry!! Check the birth day value');
+        return false;
+    }
     
     
     if (gender === 'male') {
